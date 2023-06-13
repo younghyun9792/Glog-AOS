@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/back_btn"
+        android:text="취소"
+        android:fontFamily="@font/pretendardmedium"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/back_btn"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="321dp"
+        android:layout_height="111dp"
+        android:background="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        />
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="다시 온걸 환영해요!"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendardbold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/id_input_box"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/input_box"
+        app:layout_constraintTop_toBottomOf="@id/logo_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.93"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/id_input_box_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintLeft_toLeftOf="@+id/id_input_box"
+        app:layout_constraintTop_toTopOf="@+id/id_input_box"
+        app:layout_constraintBottom_toBottomOf="@id/id_input_box"
+        android:background="@drawable/input_box_id_icon"
+        android:layout_marginLeft="18dp"
+        />
+
+    <EditText
+        android:id="@+id/id_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardmedium"
+        android:hint="아이디를 입력해주세요."
+        android:layout_marginLeft="4dp"
+        android:background="@null"
+        android:textColor="@color/text_color"
+        android:textSize="15dp"
+        android:textColorHint="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@id/id_input_box"
+        app:layout_constraintLeft_toRightOf="@id/id_input_box_icon"
+        app:layout_constraintTop_toTopOf="@id/id_input_box" />
+
+    <ImageView
+        android:id="@+id/pw_input_box"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/input_box"
+        app:layout_constraintTop_toBottomOf="@id/id_input_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.93"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/pw_input_box_icon"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/pw_input_box"
+        app:layout_constraintTop_toTopOf="@+id/pw_input_box"
+        app:layout_constraintBottom_toBottomOf="@id/pw_input_box"
+        android:background="@drawable/input_box_pw_icon"
+        android:layout_marginLeft="22dp"
+        />
+
+    <EditText
+        android:id="@+id/pw_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardmedium"
+        android:hint="비밀번호를 입력해주세요."
+        android:inputType="textPassword"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:textColor="@color/text_color"
+        android:textSize="15dp"
+        android:textColorHint="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@id/pw_input_box"
+        app:layout_constraintLeft_toRightOf="@id/pw_input_box_icon"
+        app:layout_constraintTop_toTopOf="@id/pw_input_box" />
+
+    <ImageView
+        android:id="@+id/login_box"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_box"
+        app:layout_constraintTop_toBottomOf="@id/pw_input_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.93"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/login_box"
+        app:layout_constraintRight_toRightOf="@id/login_box"
+        app:layout_constraintBottom_toBottomOf="@id/login_box"
+        app:layout_constraintTop_toTopOf="@id/login_box"
+        android:fontFamily="@font/pretendardextrabold"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/feat_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textColor="@color/main_color"
+        app:layout_constraintLeft_toLeftOf="@id/login_box"
+        app:layout_constraintRight_toRightOf="@id/login_box"
+        app:layout_constraintTop_toBottomOf="@id/login_box"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/pretendardregular"
+        android:textSize="14dp"
+        android:layout_marginRight="100dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="를 잊어 버리셨나요?"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/feat_pw"
+        app:layout_constraintTop_toBottomOf="@id/login_box"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/pretendardregular"
+        android:textSize="14dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

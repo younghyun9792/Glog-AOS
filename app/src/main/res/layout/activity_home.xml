@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:background="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/main_gif"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:text="너의 생각을\n글로 표현해봐!"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendardbold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/next_box"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_box"
+        app:layout_constraintTop_toBottomOf="@id/main_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.93"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/next_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시글 작성하러 가기"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/next_box"
+        app:layout_constraintRight_toRightOf="@id/next_box"
+        app:layout_constraintBottom_toBottomOf="@id/next_box"
+        app:layout_constraintTop_toTopOf="@id/next_box"
+        android:fontFamily="@font/pretendardextrabold"
+        android:textSize="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/feat_hot"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:background="@drawable/input_box"
+        app:layout_constraintTop_toBottomOf="@id/next_box"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintWidth_percent="0.22"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/feat_hot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardbold"
+        android:hint="🔥HOT’"
+        android:layout_marginLeft="4dp"
+        android:background="@null"
+        android:textColor="@color/text_color2"
+        android:textSize="18dp"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/feat_hot"
+        app:layout_constraintLeft_toLeftOf="@id/feat_hot"
+        app:layout_constraintRight_toRightOf="@id/feat_hot"
+        app:layout_constraintTop_toTopOf="@id/feat_hot"
+        android:layout_marginRight="4dp"
+        />
+
+    <ImageView
+        android:id="@+id/feat_board"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_box"
+        app:layout_constraintTop_toBottomOf="@id/feat_hot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/feat_board_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardsemibold"
+        android:hint="💻 게시물’s"
+        android:layout_marginLeft="4dp"
+        android:background="@null"
+        android:textColor="#80FFFFFF"
+        android:textSize="18dp"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/feat_board"
+        app:layout_constraintLeft_toLeftOf="@id/feat_board"
+        app:layout_constraintRight_toRightOf="@id/feat_board"
+        app:layout_constraintTop_toTopOf="@id/feat_board"
+        android:layout_marginRight="4dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_icon3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/feat_board"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_icon2"
+        app:layout_constraintRight_toLeftOf="@+id/icon3"
+        app:layout_constraintBottom_toBottomOf="@id/feat_board"
+        android:layout_marginRight="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_icon1"
+        app:layout_constraintRight_toLeftOf="@+id/icon2"
+        app:layout_constraintBottom_toBottomOf="@id/feat_board"
+        android:layout_marginRight="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/topic_input_box"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/input_box"
+        app:layout_constraintTop_toBottomOf="@id/feat_board"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.93"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/topic_input_box_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/topic_input_box"
+        app:layout_constraintTop_toTopOf="@+id/topic_input_box"
+        app:layout_constraintBottom_toBottomOf="@id/topic_input_box"
+        android:background="@drawable/search"
+        android:layout_marginLeft="18dp"
+        />
+
+    <EditText
+        android:id="@+id/topic_input_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardmedium"
+        android:hint="찾고싶은 주제를 입력해주세요."
+        android:layout_marginLeft="4dp"
+        android:background="@null"
+        android:textColor="@color/text_color"
+        android:textSize="15dp"
+        android:textColorHint="@color/text_color2"
+        app:layout_constraintBottom_toBottomOf="@id/topic_input_box"
+        app:layout_constraintLeft_toRightOf="@id/topic_input_box_icon"
+        app:layout_constraintTop_toTopOf="@id/topic_input_box"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/topic_input_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/recyclerview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
