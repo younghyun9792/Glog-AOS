@@ -24,6 +24,11 @@ class HomeActivity : AppCompatActivity() {
             .build()
         Glide.with(this).load(R.raw.signup_main_gif).into(binding.mainGif)
         initRecycler()
+
+        binding.nextBox.setOnClickListener(){
+            this.finish()
+            startActivity(Intent(this,WriteActivity::class.java))
+        }
     }
 
     private fun initRecycler() {
@@ -47,6 +52,9 @@ class HomeActivity : AppCompatActivity() {
             }
             add(BoardData(bid = 1, title="유저 리서치(User Research)란?", content="일상에서 제품을 이해하고 사용하는데 영향을 미치는 사람의 행위와 동기, 니즈를 특정 맥락 안에서 파악합니다.", hart=12345, hit=14516))
             add(BoardData(bid = 2, title="유저 리서치(User Research)란?", content="일상에서 제품을 이해하고 사용하는데 영향을 미치는 사람의 행위와 동기, 니즈를 특정 맥락 안에서 파악합니다.", hart=12345, hit=14516))
+            add(BoardData(bid = 3, title="유저 리서치(User Research)란?", content="일상에서 제품을 이해하고 사용하는데 영향을 미치는 사람의 행위와 동기, 니즈를 특정 맥락 안에서 파악합니다.", hart=12345, hit=14516))
+            add(BoardData(bid = 4, title="유저 리서치(User Research)란?", content="일상에서 제품을 이해하고 사용하는데 영향을 미치는 사람의 행위와 동기, 니즈를 특정 맥락 안에서 파악합니다.", hart=12345, hit=14516))
+
             BoardAdapter.datas = datas
             BoardAdapter.notifyDataSetChanged()
 

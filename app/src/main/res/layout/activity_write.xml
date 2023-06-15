@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/back_btn"
+        android:text="취소"
+        android:fontFamily="@font/pretendardmedium"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/back_btn"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:background="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="게시"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/pretendardmedium"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/back_btn"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:hint="제목"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="26dp"
+        android:textColor="@color/text_color"
+        android:backgroundTint="@color/text_color"
+        android:textColorHint="@color/text_color"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/pretendardsemibold"
+        />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:hint="자유롭게 너의 글을 꾸며봐!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18dp"
+        android:textColor="@color/text_color"
+        android:background="@null"
+        android:textColorHint="@color/text_color"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/pretendardmedium"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
